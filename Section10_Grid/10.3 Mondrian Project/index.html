@@ -21,8 +21,10 @@
     */
     .container {
       display: grid;
-      grid-template-columns: 320px 320px 320px;
-      grid-template-rows: 414px 334px 20px;
+      grid-template-columns: 320px 320px 50px;
+      grid-template-rows: 414px 320px 20px;
+      gap: 10px;
+      background-color: #000;
     }
     .red {
       display: flex;
@@ -38,9 +40,43 @@
     .black {
       background-color: #232629;
     }
-    .white {
+    .white1 {
+      background-color: #F0F1EC;
+      grid-column-start: 2;
+      grid-column-end: 4;
+    }
+    .white2 {
+      background-color: #F0F1EC;
+
+    }
+    .white3 {
       background-color: #F0F1EC;
     }
+    .white4 {
+      background-color: #F0F1EC;
+    }
+    .white5 {
+      background-color: #F0F1EC;
+    }
+    .white6 {
+      background-color: #F0F1EC;
+    }
+    .container2{
+      display: grid;
+      flex-direction: column;
+      background-color: black;
+      grid-template-columns: 50px;
+      grid-template-rows: 130px 150px;
+      gap: 10px;
+    }
+    .container3{
+      display: grid;
+      background-color: black;
+      grid-template-columns: 198px 153px 50px;
+      grid-template-rows: 20px;
+      gap: 10px;
+    }
+
   </style>
 </head>
 
@@ -49,14 +85,23 @@
 
   <div class="container">
     <div class="red"></div>
-    <div class="white"></div>
-    <div class="white"></div>
-    <div class="white blue"></div>
-      <div class="blue"></div>
-    <div class="yellow"></div>
+    <div class="white1"></div>
+    <div class="white2"></div>
+    <div class="white3"></div>
+    <div class="container2">
+        <div class="blue"></div>
+        <div class="white4"></div>
+    </div>
+    <div class="white5"></div>
+    <div class="container3">
+        <div class="yellow"></div>
+        <div class="black"></div>
+        <div class="white6"></div>
+    </div>
     <div class="black"></div>
-    <div class="white"></div>
+    <div class="white4"></div>
   </div>
+  <button class="btn btn-primary">Click</button>
 </body>
 
 </html>
