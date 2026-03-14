@@ -1,21 +1,6 @@
-function getMilk() {   
-  console.log("leaveHouse");
-  console.log("moveRight");
-  console.log("moveRight");
-  console.log("moveUp");
-  console.log("moveUp");
-  console.log("moveUp");
-  console.log("moveUp");
-  console.log("moveRight");
-  console.log("moveRight");
-  console.log("moveLeft");
-  console.log("moveLeft");
-  console.log("moveDown");
-  console.log("moveDown");
-  console.log("moveDown");
-  console.log("moveDown");
-  console.log("moveLeft");
-  console.log("moveLeft");
-  console.log("enterHouse");
+function getMilk(money) {   
+    return money%1.5;
+
 }
-getMilk();
+var bottles = getMilk(5);
+console.log(bottles);
