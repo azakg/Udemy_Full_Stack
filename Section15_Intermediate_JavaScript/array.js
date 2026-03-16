@@ -5,3 +5,7 @@ if (guestList.includes(guestName)){
 }
 else{
     alert("Sorry you'r not in the list.");
+}
+guestList.push("Apa");
+
+alert(guestList[4]);
