@@ -22,7 +22,10 @@ function fizzBuzz() {
             numberList.push(temp);
             temp++;
         }
-        console.log(numberList);
+        
+        count++;
     }
-    count++;
+    console.log(numberList);
+    
 }
+fizzBuzz();
