@@ -30,3 +30,13 @@ $("h1").before("<button>before</button>");
 $("h1").after("<button>after</button>");
 $("h1").prepend("<button>prepend</button>");
 $("h1").append("<button>append</button>");
+
+
+// $("button").on("click", function(){
+//     $("h1").hide();
+//     setTimeout(function(){$("h1").show()}, 1000);
+// });
+
+$("button").on("click", function(){
+    $("h1").toggle();
+})
