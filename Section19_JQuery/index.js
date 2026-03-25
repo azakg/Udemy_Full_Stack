@@ -37,6 +37,17 @@ $("h1").append("<button>append</button>");
 //     setTimeout(function(){$("h1").show()}, 1000);
 // });
 
+// $("button").on("click", function(){
+//     $("h1").fadeOut();
+//     $("h1").fadeIn();
+// });
+
+// $("button").on("click", function(){
+//     // $("h1").slideUp();
+//     // $("h1").slideDown();
+//     $("h1").slideToggle();
+// });
+
 $("button").on("click", function(){
-    $("h1").toggle();
+    $("h1").animate({opacity: 0.5});
 })
