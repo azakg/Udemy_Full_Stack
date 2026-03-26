@@ -20,7 +20,7 @@ inquirer
   .then((answers) => {
     const url = answers.URL;
     var qr_svg = qr.image(url);
-    const newArray = url.slice(0, -3);
+    const newArray = url.slice(0, -4);
     qr_svg.pipe(fs.createWriteStream('qr_imge_'+newArray+'.png'));
 
     // const data = new Uint8Array(Buffer.from(url));
