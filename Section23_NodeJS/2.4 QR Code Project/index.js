@@ -20,10 +20,11 @@ inquirer
   .then((answers) => {
     const url = answers.URL;
     var qr_svg = qr.image(url);
-    qr_svg.pipe(fs.createWriteStream('qr_imge.png'));
+    const newArray = url.slice(0, -3);
+    qr_svg.pipe(fs.createWriteStream('qr_imge_'+newArray+'.png'));
 
-    const data = new Uint8Array(Buffer.from(url));
-    writeFile('URL2.txt', data, (err) => {
+    // const data = new Uint8Array(Buffer.from(url));
+    fs.writeFile('URL2.txt', url, (err) => {
   if (err) throw err;
   console.log('The file has been saved!');
 });
@@ -37,7 +38,4 @@ inquirer
   });
 
 
-  
-
-// const data = new Uint8Array(Buffer.from('Hello Node.js'));
 
