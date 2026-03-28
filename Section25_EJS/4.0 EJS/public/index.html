@@ -10,9 +10,8 @@
 <body>
     <h4 id="text">Hey! It's a weekday, it's time to work hard!</h4>
     <script>
-        // const d = new Date();
-        // let day = d.getDay()
-        var day = 1;
+        const d = new Date();
+        let day = d.getDay()
         if(day ===6 || day === 0){
             console.log("Saturday");
             document.getElementById("text").innerHTML = "Hey! It's a weekend, it's time to have fun!";

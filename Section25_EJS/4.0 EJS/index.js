@@ -1,20 +1,29 @@
 import express from "express";
-import bodyParser from "body-parser";
-import { dirname } from "path";
-import { fileURLToPath } from "url";
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
-
 
 const app = express();
 const port = 3000;
 
-app.use(bodyParser.urlencoded({ extended: true }));
-
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/public/index.html");
+    const today = new Date();
+    // const day = today.getDay();
+    const day = 3;
+
+    console.log(day);
+
+    let type = "a weekday";
+    let adv = "it's time to work hard";
+
+    if (day === 0 || day === 6){
+        type = "a weekend";
+        adv = "it's time to have fun";
+    }
+
+    res.render("index.ejs", {
+        dayType: type,
+        advice: adv,
+    });
 });
 
 app.listen(port, () => {
-  console.log(`Listening on port ${port}`);
-});
+    console.log(`Server running on port ${port}.`);
+})
