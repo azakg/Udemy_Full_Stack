@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week Day</title>
+</head>
+
+<body>
+    <h4 id="text">Hey! It's a weekday, it's time to work hard!</h4>
+    <script>
+        // const d = new Date();
+        // let day = d.getDay()
+        var day = 1;
+        if(day ===6 || day === 0){
+            console.log("Saturday");
+            document.getElementById("text").innerHTML = "Hey! It's a weekend, it's time to have fun!";
+        }else{
+            document.getElementById("text").innerHTML = "Hey! It's a weekday, it's time to work hard!";
+        }
+    </script>
+</body>
+
+</html>
