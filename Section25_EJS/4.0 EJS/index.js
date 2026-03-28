@@ -5,8 +5,7 @@ const port = 3000;
 
 app.get("/", (req, res) => {
     const today = new Date();
-    // const day = today.getDay();
-    const day = 3;
+    const day = today.getDay();
 
     console.log(day);
 
