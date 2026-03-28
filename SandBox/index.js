@@ -5,9 +5,10 @@ const app = express();
 const port = 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 
+let bowl = ["Apple", "Orange", "Pears"];
 
 app.get("/", (req, res)=>{
-    res.render('index.ejs', {name: "Azamat"});
+    res.render('index.ejs', {fruits: bowl});
 });
 
 app.listen(port, () => {
