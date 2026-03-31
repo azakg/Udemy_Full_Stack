@@ -1,0 +1,15 @@
+<%- include("partials/header.ejs") %>
+
+<form action="/submit" method="POST">
+    <label for="fname">Topic name:</label>
+    <input type="text" name="topic"><br><br>
+     <label for="fname">Topic body:</label>
+     <textarea name="topic_body" cols="40" rows="5"></textarea>
+     <input type="submit" vlaue="Push">
+     </form>
+     <%if(locals.usersTopcName && locals.usersTopc){%>
+        <h3>Topic:<%=usersTopcName%></h3><br><br>
+        <p>Text: <%=usersTopc%></p>
+        <%}%>
+    
+<%- include("partials/footer.ejs") %>

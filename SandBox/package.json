@@ -10,8 +10,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "body-parse": "^0.1.0",
     "body-parser": "^2.2.2",
     "ejs": "^5.0.1",
+    "epxress": "^0.0.1-security",
     "express": "^5.2.1"
   }
 }
