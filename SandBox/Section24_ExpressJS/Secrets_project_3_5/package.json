@@ -1,0 +1,16 @@
+{
+  "name": "secrets_project_3_5",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parse": "^0.1.0",
+    "ejs": "^5.0.1"
+  }
+}
