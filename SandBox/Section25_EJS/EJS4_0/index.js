@@ -9,15 +9,15 @@ app.get("/", (req, res)=>{
     const day = today.getDay();
     // const day = 2;
 
-    let weekDay = "Weekday";
+    let weekDay1 = "Weekday";
     let weekDayText = "it's time to work hurd!";
 
     if(day === 0 || day === 6){
-        weekDay = "Weekend";
+        weekDay1 = "Weekend";
         weekDayText = "it's time to have fun!";
     };
     res.render("index.ejs", {
-        weekDay: weekDay,
+        weekDay: weekDay1,
         weekDayText: weekDayText
     });
 });
