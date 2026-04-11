@@ -2,13 +2,13 @@ import express from "express";
 import axios from "axios";
 
 const app = express();
-const port = 3000;
+const port = 3001;
 const API_URL = "https://secrets-api.appbrewery.com";
 
 //TODO 1: Fill in your values for the 3 types of auth.
 const yourUsername = "Azamat";
 const yourPassword = "Apsamatov";
-const yourAPIKey = "2343fe18-1f57-49f9-aab4-673084c35a45";
+const yourAPIKey = "ba9d989d-5c3c-4324-9386-dbfeff424abd";
 const yourBearerToken = "fd37322a-ff9e-4319-b5da-165953cf4601";
 
 app.get("/", (req, res) => {

@@ -3,7 +3,7 @@ import axios from "axios";
 import bodyParser from "body-parser";
 
 const app = express();
-const port = 3000;
+const port = 3001;
 const API_URL = "https://secrets-api.appbrewery.com";
 
 // HINTs: Use the axios documentation as well as the video lesson to help you.
