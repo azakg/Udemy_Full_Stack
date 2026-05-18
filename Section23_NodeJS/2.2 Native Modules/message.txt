@@ -1,2 +1,3 @@
-Hello from NODE JS!
-Hello from Azamat!
+Hello Node.js
+ Hello from NODE JS! 
+ Hello from Azamat!
